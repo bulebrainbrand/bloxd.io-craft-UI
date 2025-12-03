@@ -35,6 +35,15 @@ CraftUIUtils.removeCraft(id)
 
 
 
-3.make onPlayerUseCraftUI
-
-todo:writejsdoc
+3.write onPlayerUseCraftUI
+onPlayerUseCraftUI is callback.
+```js
+/**
+* @param {playerId} id - craft player
+* @param {string} craftKey - player using craft recipe key
+* @param {string} item - craft item
+* @param {boolean} willReject - if true,auto return "preventCraft"
+* @returns {void}
+*/
+onPlayerUseCraftUI(id,craftKey,item,willReject)
+```
