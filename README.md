@@ -4,9 +4,9 @@ use craft tab to custom UI.Framework
 1.set ```CRAFT_DATA```.
 look this
 ```js
-type CRAFT_DATA = Record<string,CraftKey>
+type CRAFT_DATA = Record<string,CraftValue>
 
-type CraftKey = {recipe:recipe,canCraft:Boolean,station:string|string[]}
+type CraftValue = {recipe:recipe,canCraft:Boolean,station:string|string[]}
 
 type recipe = Record<craftItemName,{cost:cost,amt:number}>
 
