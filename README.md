@@ -20,9 +20,20 @@ type cost = Record<item,number>
 *
 * @param {playerId} id - change recipe id
 * @param {craftKey} craftKey - set recipe type.need CRAFT_DATA key
+* @returns {void}
 */
-CraftUIUtils.setCraftKey(id,craftKey)
+CraftUIUtils.setCraft(id,craftKey)
+
+/**
+* remove player recipe
+*
+* @param {playerId} id - remove recipe id
+* @returns {void}
+*/
+CraftUIUtils.removeCraft(id)
 ```
+
+
 
 3.make onPlayerUseCraftUI
 
