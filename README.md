@@ -14,7 +14,15 @@ type cost = Record<item,number>
 ```
 2.use CraftUIUtils
 
-todo:write jsdoc
+```js
+/**
+* set player recipe 
+*
+* @param {playerId} id - change recipe id
+* @param {craftKey} craftKey - set recipe type.need CRAFT_DATA key
+*/
+CraftUIUtils.setCraftKey(id,craftKey)
+```
 
 3.make onPlayerUseCraftUI
 
