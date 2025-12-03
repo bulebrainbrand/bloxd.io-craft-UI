@@ -8,7 +8,7 @@ type CRAFT_DATA = Record<string,CraftKey>
 
 type CraftKey = {recipe:recipe,canCraft:Boolean,station:string|string[]}
 
-type recipe = Record<craftItemName,cost>
+type recipe = Record<craftItemName,{cost:cost,amt:number}>
 
 type cost = Record<item,number>
 ```
